@@ -4,7 +4,6 @@ summary: spring batch
 categories: [SpringBoot]
 comments: true
 ---
-sssss
 
 ### Spring Batch
 대용량 데이터를 처리하기 위해서 Spring에서 지원하는 일괄처리 기능이다.
