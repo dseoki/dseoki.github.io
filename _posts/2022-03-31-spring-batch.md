@@ -83,7 +83,31 @@ public Job job() {
   * *일 경우 모든 ExitStatus가 지정된다.
 * .to()
   * 다음으로 이동할 Step 지정
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+#### ※ P.S
+<pre>
+SpringBoot에서 어노테이션 @RequiredArgsConstructor을 사용하면 @Autowired 없이
+
+<span style="color: red;">private final DataSource dataSource;</span>
+
+다음과 같이 작성할 수 있는데 이는 batch에서 같은 class 타입이 여러개인 경우 적용이 안되는 듯 하다.
+@Autowired와 @Qualifier를 사용하여 지정하니 에러 없이 동작하였다.
+
+<p style="color: blue;">
+@Autowired
+@Qualifier("dataSource")
+private DataSource dataSource;
+
+@Autowired
+@Qualifier("dataSource2")
+private DataSource dataSource2;
+</p>
+</pre>
 
 
 ....writing
