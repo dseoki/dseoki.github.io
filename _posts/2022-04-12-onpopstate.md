@@ -12,7 +12,7 @@ comments: true
 뒤로가기를 하면 다음과 문제가 나타났다.
 <br/><br/>
 
-<img src="../assets/img/post/img1.png" width=350 />
+<img src="https://user-images.githubusercontent.com/32925806/162911844-f6e6c6e0-0b67-41b6-9390-42a28878f55a.png" alt="image1" width=350 />
 
 <br/>
 처음 div#step1이 보이며 다음 페이지 이동 시 step2가 나타나고 뒤로가 가기 했을 경우 #step1이 나타내고 싶은데 page1이 나타나고 있다.
