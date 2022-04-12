@@ -27,9 +27,14 @@ layout: page
 
   {% if page.comment %}
   <div class="post_comment">
-
-    {% include disqus.html username = site.disqus.shortname %}
-    {% include cusdis.html %}
+    <script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="url"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
 
   </div>
   {% endif %}
