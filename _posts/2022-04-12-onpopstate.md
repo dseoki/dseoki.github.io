@@ -15,7 +15,9 @@ comments: true
 <img src="https://user-images.githubusercontent.com/32925806/162911844-f6e6c6e0-0b67-41b6-9390-42a28878f55a.png" alt="image1" width=350 />
 
 <br/>
-처음 div#step1이 보이며 다음 페이지 이동 시 step2가 나타나고 뒤로가 가기 했을 경우 #step1이 나타내고 싶은데 page1이 나타나고 있다.
+
+### 문제점
+page1에서 page2로 이동 시 처음 <span style="color: cyan">div#step1</span>이 보이며 다음 페이지 이동 시 <span style="color: cyan">div#step2</span>가 나타나고 뒤로가 가기 했을 경우 <span style="color: cyan">div#step1</span>을 나타내고 싶은데 page1이 나타나고 있다.
 
 이를 해결하기 위해 window.onpopstate를 사용했는데 html5 이상에서만 지원이 되며 explorer같은 데서는 오류가 발생한다.
 
@@ -29,7 +31,7 @@ if(typeof(history.pushState) == 'function') {
 }
 ```
 <br/>
-그 다음 step1 과 step2를 구분하기 위해 flag 값을 주었고 이벤트 발생 시 조건문을 통해 분기 처리했다.
+그 다음 <span style="color: cyan">div#step1</span> 과 <span style="color: cyan">div#step2</span>를 구분하기 위해 flag 값을 주었고 이벤트 발생 시 조건문을 통해 분기 처리했다.
 <br/><br/>
 
 ```javascript
@@ -46,9 +48,9 @@ if(typeof(history.pushState) == 'function') {
 ```
 
 그런데 이렇게만 작성하면 스크립트가 동작하지 않는다.
-그 이유는 스크립트를 통해 show hide를 하면 url은 변동이 되지 않으며 브라우저 history에도 변화가 없기 때문에 step2에서 뒤로가기 진행 시 page1으로 이동하게 된다.
+그 이유는 스크립트를 통해 show hide를 하면 url은 변동이 되지 않으며 브라우저 history에도 변화가 없기 때문에 <span style="color: cyan">div#step2</span>에서 뒤로가기 진행 시 page1으로 이동하게 된다.
 
-그래서 step1에서 step2로 이동하는 button onclick 이벤트가 발생 시 history에 정보를 추가하였다.
+그래서 <span style="color: cyan">div#step1</span>에서 <span style="color: cyan">div#step2</span>로 이동하는 button onclick 이벤트가 발생 시 history에 정보를 추가하였다.
 ```javascript
 $('#step1-btn').on('click', function() {
     history.pushState(null, null, ''); // 뒤로가기 이벤트 제어하기 위해 사용
