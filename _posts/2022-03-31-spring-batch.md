@@ -13,8 +13,8 @@ batch는 이러한 상황에서 중간에 끊겨도 이어서 진행이 가능�
 ### batch 구성도
 1. 배치의 최소 실행 단위를 job 이라고 한다.
 2. 하나의 Job은 하나 이상의 Step을 가진다.
-3. 하나의 Step은 다음과 같은 작업을 가질 수 있다. : [read, process, write] == chunk
-    * read, process, write 세 개의 실행 단위를 하나로 묶은 것을 'chunk'라고 칭한다.
+3. 하나의 Step은 다음과 같은 작업을 가질 수 있다. : [read, process, write] == tasklet
+    * read, process, write 세 개의 실행 단위를 하나로 묶은 것을 'tasklet'라고 칭한다.
 
 <pre>
 JobLauncher --> Job --> Step --> read
