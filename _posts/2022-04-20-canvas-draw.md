@@ -1,7 +1,7 @@
 ---
 title: html canvas
 summary: canvas를 이용하여 그림 그리기
-categories: [개발공부]
+categories: [dev]
 tags: [HTML, JavaScript]
 date: 2022-04-20
 comments: true
