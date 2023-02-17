@@ -22,7 +22,7 @@ cusdis:
 
 user:
   name: dseoki
-  pic: /assets/img/cat.jpg
+  pic: https://user-images.githubusercontent.com/32925806/219560460-36b352a8-ae8d-4403-9108-ca0ce5289912.png
   picAlt: "dseoki"
   job: dream developer
   aboutme: true # comment this out if you don't need the 'about' page.
