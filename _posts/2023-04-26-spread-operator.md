@@ -56,7 +56,7 @@ console.log({...a, ...b}); // {0: 1, 1: 4, 2: 5}
 
 
 ### 복사
-전개 연산자(Spread Operator)를 이용하면 인스턴스를 복사할 수도 있습니다. 먼저 아래의 코드를 보겠습니다.
+전개 연산자(Spread Operator)를 이용하면 배열이나 객체를 복사할 수도 있습니다. 먼저 아래의 코드를 보겠습니다.
 ```javascript
 var obj1 = {a: 1, b: 2, c: 3};
 var obj2 = obj1;
