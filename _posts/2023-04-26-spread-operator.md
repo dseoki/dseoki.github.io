@@ -8,7 +8,7 @@ comments: true
 ## 전개 연산자(spread operator)
 객체나 배열, 함수의 인수 목록 등을 확장하여 병합할 때 사용할 수 있는 `전개 연산자`를 알아봅니다.<br/>
 무슨 말이냐?  `A`라는 객체와 `B`라는 객체가 있을때 두 객체를 병합하여 중복되는 값은 뒤에 오는 값으로 변경하고 하나의 객체로 새롭게 생성하는 것입니다.<br/>
-전개 연산자는 `"..."`기호로 표현하며 중괄호 `{}`안에서 사용이 됩니다. 아래의 코드를 확인해봅니다.
+전개 연산자는 `"..."`기호로 표현됩니다. 아래의 코드를 확인해봅니다.
 
 ```javascript
 const objA = {x: 1, y: 2};
@@ -38,4 +38,20 @@ function sum(a, b, c) {
 
 const arr = [1, 2, 3];
 console.log(sum(...arr)); // 6
+```
+
+<br/>
+
+### React에서 이용
+react에서 useState를 사용할 경우 상태 값을 변경 시 다음과 같이 이용할 수 있습니다.
+```javascript
+const [data, setData] = useState({});
+
+const dataObj = {
+	name: 'John',
+	age: 20
+}
+setData(dataObj); // 최초 data상태 저장
+
+setData({...data, age: 31}); // {name: 'John', age: 31}
 ```
