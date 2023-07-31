@@ -23,7 +23,7 @@ git config --global user.name = 가웨인 #사용자명 설정
 
 ### GIT 초기화
 
-```ba
+```bash
 git init
 ```
 
