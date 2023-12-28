@@ -35,7 +35,10 @@ git init
 git remote add origin [git repository 주소]
 ```
 
-
+### repository remote 확인
+```bash
+git remote -v
+```
 
 ### 메인 브랜치 이름 변경
 
@@ -64,8 +67,8 @@ git status
 ### stage 추가, commit 하려는 파일을 선택한다.
 
 ```bash
-git add
-git add {파일명}
+git add . #모든 파일 stage 추가
+git add {파일명} # 특정 파일만 stage 추가
 ```
 
 
