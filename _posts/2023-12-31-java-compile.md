@@ -5,18 +5,6 @@ categories: [java]
 comments: true
 ---
 
-> #### 주제!!
-> 사전미팅에 시간 내주셔서 감사합니다. 첫 멘토링을 위해 아래 토픽에 대해 깊이있게 공부하시고 설명해주시면 좋을것 같습니다.
-> * 객체지향 프로그래밍이란? (다른 프로그래밍 패러다임과의 차이, 장단점, 사용 이유)
-> * 추상화/상속/다형성/캡슐화
-> * 자바 컴파일 과정에 대해 설명 하시오 (키워드: class loader, jvm, compiler/interpreter)
-> <pre>한 토픽당 10-15분 내외로 설명해주실 수 있을 정도로 준비해주시면 됩니다.
-> 공부하시다가 궁금한점은 언제든 이 채널에 남겨주시면 됩니다. 기술에 대한 질문은 아래  세가지 사항을 포함해주시면 좋습니다.</pre>
-> 1. 키워드 또는 질문
-> 2. 검색 결과 링크
-> 3. 검색 결과 중 이해가 안됐던 부분
-
-
 # 자바 실행 과정
 ```java
 class Hellow {
@@ -74,3 +62,4 @@ JVM은 메모리 용도에 따라 주요 3가지 주요 영역(method area, call
 
 #### 참고링크
 * https://sunrise-min.tistory.com/entry/%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%96%B8%EC%96%B4%EC%99%80-%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0-%EC%96%B8%EC%96%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4-Java%EB%8A%94-%EC%96%B4%EB%96%A4-%EC%96%B8%EC%96%B4%EC%9D%B8%EA%B0%80
+* https://velog.io/@minseojo/Java-%EC%9E%90%EB%B0%94-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EA%B3%BC%EC%A0%95-JVM-%EB%82%B4%EB%B6%80-%EA%B5%AC%EC%A1%B0
