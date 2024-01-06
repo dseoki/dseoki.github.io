@@ -61,10 +61,3 @@ Haskell, Lisp 및 Erlang 등이 있다.
 원하는 결과를 달성하기 위한 세부 단계를 지정하기 보다는 원한느 결과를 설명하는데 중점을 둔다.
 어떻게 계산하냐 보다 무엇을 계산해야 하는지를 다룬다.
 데이터베이스 쿼리에 사용되는 언어인 SQL이 있다.
-
-
-
-##### 참고 링크
-* https://velog.io/@codenmh0822/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84
-* https://adjh54.tistory.com/97
-* https://qus.kr/developer/post/programming-paradigm/
