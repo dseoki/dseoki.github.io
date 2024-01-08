@@ -53,14 +53,27 @@ JVM은 메모리 용도에 따라 주요 3가지 주요 영역(method area, call
 쓰레드간 공유가 되지만 각 인스턴스는 자신의 주소값을 가지고 있다.
 주기적으로 [GC(Garbage Collection)](/_posts/2024-01-04-Garbage-Collection.md)가 메모리를 확인 후 제거한다.
 
+Heap영역은 설계시 두가지의 전제로 설계되었다.
+1. 대부분의 객체는 금방 접근 불가능한 상태(Unreachable)가 된다.
+2. 오래된 객체에서 새로운 객체로의 참조는 아주 적게 존재한다.
+
+![heap 메모리 이미지](../assets/img/post/heap-memory.png)
+
+<span style="color: red;">객체는 대부분 일회성이며, 메모리에 오래동안 남아있는 경우는 드물다.</span> 하여 물리적 영역을 아래와 같이 나누었다.\
+*Perm 영역이 존재하였으나 java8 부터는 제거되었다.*
+
 힙 영역은 Young Generation, Old Generation 두가지 영역으로 나뉜다.
 #### Young Generation :
 새로 생성된 객체들이 할당되는 영역이다. 또 다시 Eden과 Survivor (S0, S1)으로 구성된다.
 * Eden : new를 통해 새로 생성된 객체가 할당, 정기적으로 정리 후 남은 객체들은 Survivor 영역으로 이동
-* Survivor : 각 영역이 채워지게 되면, 살아남은 객체는 비워진 Survivor로 순차적으로 이동. 남은 객체들의 서브 공간으로 이용
+* Survivor(0, 1) : 각 영역이 채워지게 되면, 살아남은 객체는 비워진 Survivor로 순차적으로 이동. 남은 객체들의 서브 공간으로 이용
 
 #### Old Generation :
 생명주기가 긴 객체를 GC 대상으로 하는 영역 Young Generation에서 마지막까지 살아남은 객체가 할당
+
+**위 이미지에서 Old가 더 공간이 큰것은 Old 영역의 객체는 오래 유지되어 가비지가 적게 발생하기 때문에 그만큼 메모리 공간이 더 크다.**
+
+> new를 통해 처음 메모리가 할당이 되면 Eden에 저장되고 공간이 모두차면 GC가 한번 처리하여 사용하지 않는 것들을 제거 후 남은 객체는 Survivor0에 이후 모두 다 차면 Survivor1로 그 이후 또 다차면 Old로 이동하는 방식으로 동작한다.
 
 ### 스택 (stack | execution stack) : 먼저 넣은 것이 나중에 나오고 나중에 넣은게 먼저 나옴 (LIFO)
 메서드 작업에 필요한 메모리 공간을 제공\
