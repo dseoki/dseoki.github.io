@@ -1,7 +1,7 @@
 ---
 title: MVC 패턴에 대해서 알아보자
 summary: Model, View, Controller
-categories: [SpringBoot]
+categories: [Spring]
 comments: true
 ---
 
