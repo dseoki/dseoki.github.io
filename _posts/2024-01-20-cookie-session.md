@@ -1,7 +1,7 @@
 ---
 title: Cookie와 Session
 summary: 쿠키와 세션에 대해서 알아보자
-categories: [SpringBoot]
+categories: [dev]
 comments: true
 ---
 
