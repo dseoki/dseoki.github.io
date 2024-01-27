@@ -53,6 +53,7 @@ HTTP Methods는 특정한 의도를 나타내기 때문에, 클라이언트에�
 * **TRACE:** 대상 리소스에 대한 경로를 따라 메세지 루프백 테스트를 수행한다.
 
 ## HTTP Method 속성
+
 | Method | Safe | Idempotent | Cacheable |
 | ---- | :----: | :----: | :----: |
 | GET | ✔ | ✔ | ✔ |
