@@ -1,7 +1,7 @@
 ---
 title: Spring Bean Scope와 종류
 summary: Spring Bean Scope와 종류에 대해서 알아보자
-categories: [dev, http]
+categories: [Spring]
 comments: true
 ---
 
